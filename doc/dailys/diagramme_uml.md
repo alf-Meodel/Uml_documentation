@@ -17,11 +17,11 @@
 
 - [x] [Découverte de l'UML](#découverte-de-luml)
 
-  - [x] [Comprendre la signification de l'UML](#comprendre-la-signification-de-luml)
-  - [x] [Comprendre les origines de l'UML. Pour a-t-il été créé (pour quels besoins)](#comprendre-la-signification-de-luml)
-  - [x] [Quels sont les objectifs d'utiliser UML]()
+  - [x] [Comprendre la signification de l'UML](#comprendre-la-signification-d-uml)
+  - [x] [Pour quels besoins](#)
+  - [x] [Quels sont les objectifs d'utiliser UML](#quels-sont-les-objectifs-d'utiliser-uml)
   - [x] Comparaison avec la méthode MERISE ?
-  - [x] [Avantages / Inconvénients](#avantages--inconvénients-de-luml)
+  - [x] [Avantages / Inconvénients](#avantages--inconvénients-de-merise)
 
 - [ ] Découverte des Diagrammes
 
@@ -47,11 +47,11 @@
 
 ![border](../../assets/line/line-teal-point_r.png)
 
-## Comprendre la signification de l'UML
+## Comprendre la signification d UML
 
 L’UML **(Unified Modeling Language)** est un langage de modélisation graphique standardisé,**utilisé pour concevoir, visualiser et documenter des systèmes logiciels**. Il permet de représenter les aspects structurels et comportementaux d'un système grâce à des diagrammes.
 
-## Comprendre les origines de l'UML. Pour a-t-il été créé (pour quels besoins)
+## Pour quels besoins à été créé UML
 
 - L’UML a été créé au milieu des années 1990 pour répondre aux défis de la conception de logiciels complexes.
 - Il visait à standardiser les méthodes de modélisation qui étaient nombreuses et incompatibles (OMT, Booch, etc.), à simplifier la conception des systèmes et à soutenir la programmation orientée objet, alors en plein essor.
@@ -82,8 +82,6 @@ L'UML vise à standardiser la modélisation logicielle, simplifier la conception
 | Méthode simple et accessible.                            | Non adaptée aux projets orientés objet modernes.                    |
 | Bien adaptée aux systèmes d’information classiques (SI). | Moins flexible face aux architectures complexes.                    |
 | Bonne structuration des bases de données et des flux.    | Peu de prise en charge des concepts comportementaux ou interactifs. |
-
-## Avantages / Inconvénients
 
 <a href="#sommaire">
   <img src="../../assets/button/back_to_top.png" alt="Back to top" style="width: 150px; height: auto;">
