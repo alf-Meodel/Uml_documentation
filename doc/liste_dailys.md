@@ -28,23 +28,23 @@
 
 - [x] Découverte de l'UML
 
-  - [ ] Comprendre la signification de l'UML
-  - [ ] Comprendre les origines de l'UML. Pour a-t-il été créé ? (pour quels besoins)
-  - [ ] Quels sont les objectifs d'utiliser UML ?
-  - [ ] Comparaison avec la méthode MERISE ?
-  - [ ] Avantages / Inconvénients
+  - [x] Comprendre la signification de l'UML
+  - [x] Comprendre les origines de l'UML. Pour a-t-il été créé ? (pour quels besoins)
+  - [x] Quels sont les objectifs d'utiliser UML ?
+  - [x] Comparaison avec la méthode MERISE ?
+  - [x] Avantages / Inconvénients
 
-- [ ] Découverte des Diagrammes
+- [x] Découverte des Diagrammes
 
-  - [ ] Lister les types de diagrammes existants
-  - [ ] Lister les diagrammes existants
-  - [ ] Comprendre l'intérêt de chacun des diagrammes
-  - [ ] Etudier les interactions existantes entre chacun des Diagrammes
+  - [x] Lister les types de diagrammes existants
+  - [x] Lister les diagrammes existants
+  - [x] Comprendre l'intérêt de chacun des diagrammes
+  - [x] Etudier les interactions existantes entre chacun des Diagrammes
 
-- [ ] Découverte des outils
-  - [ ] Trouver des outils type clients lourds
-  - [ ] Trouver des outils cloud
-- [ ] Initiation au diagramme de cas d'utilisation
+- [x] Découverte des outils
+  - [x] Trouver des outils type clients lourds
+  - [x] Trouver des outils cloud
+- [x] Initiation au diagramme de cas d'utilisation
   - [ ] Comprendre les objectifs (d'un point de vue client / d'un point de vue développeur)
   - [ ] Comment représenter un système d'information complet
   - [ ] Etudier les concepts clés du diagramme de cas d'utilisation
