@@ -4,6 +4,10 @@
 
 ![border](./assets/line/border_deco_rt.png)
 
+```
+(Unified Modeling Language)
+```
+
 # Sommaire
 
 - [Introduction](#introduction)
@@ -122,8 +126,6 @@ Dans cet exemple :
 - **Classe `Client`** : contient les informations du client et une méthode `passerCommande()`.
 - **Classe `Commande`** : contient les détails de la commande et une méthode `valider()`.
 - **Association** : montre la relation entre `Client` et `Commande`.
-
-L'objectif principal de chaque élément est de représenter **visuellement** un aspect du système pour en faciliter la compréhension et la conception. 😊
 
 ![border](./assets/line/line-pink-point_l.png)
 

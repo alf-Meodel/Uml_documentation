@@ -7,7 +7,7 @@
 
 ![border](../../assets/line/border_deco_rt.png)
 
-# Découverte de l'UML
+# GET STARTED UML
 
 ## Sommaire
 
@@ -15,13 +15,13 @@
 
 ![border](../../assets/line/line-pink-point_l.png)
 
-- [x] Découverte de l'UML
+- [x] [Découverte de l'UML](#découverte-de-luml)
 
-  - [ ] Comprendre la signification de l'UML
-  - [ ] Comprendre les origines de l'UML. Pour a-t-il été créé ? (pour quels besoins)
-  - [ ] Quels sont les objectifs d'utiliser UML ?
-  - [ ] Comparaison avec la méthode MERISE ?
-  - [ ] Avantages / Inconvénients
+  - [x] [Comprendre la signification de l'UML](#comprendre-la-signification-de-luml)
+  - [x] [Comprendre les origines de l'UML. Pour a-t-il été créé (pour quels besoins)](#comprendre-la-signification-de-luml)
+  - [x] [Quels sont les objectifs d'utiliser UML]()
+  - [x] Comparaison avec la méthode MERISE ?
+  - [x] [Avantages / Inconvénients](#avantages--inconvénients-de-luml)
 
 - [ ] Découverte des Diagrammes
 
@@ -47,7 +47,43 @@
 
 ![border](../../assets/line/line-teal-point_r.png)
 
+## Comprendre la signification de l'UML
+
+L’UML **(Unified Modeling Language)** est un langage de modélisation graphique standardisé,**utilisé pour concevoir, visualiser et documenter des systèmes logiciels**. Il permet de représenter les aspects structurels et comportementaux d'un système grâce à des diagrammes.
+
+## Comprendre les origines de l'UML. Pour a-t-il été créé (pour quels besoins)
+
+- L’UML a été créé au milieu des années 1990 pour répondre aux défis de la conception de logiciels complexes.
+- Il visait à standardiser les méthodes de modélisation qui étaient nombreuses et incompatibles (OMT, Booch, etc.), à simplifier la conception des systèmes et à soutenir la programmation orientée objet, alors en plein essor.
+- UML facilite la communication entre les parties prenantes, améliore la qualité des logiciels en identifiant les problèmes en amont, et crée une documentation claire et durable pour des projets complexes.
+- C’est un outil essentiel pour structurer et planifier les systèmes logiciels modernes.
+
+## Quels sont les objectifs d'utiliser UML
+
+L'UML vise à standardiser la modélisation logicielle, simplifier la conception de systèmes complexes, soutenir la programmation orientée objet, améliorer la communication entre équipes, détecter les problèmes tôt pour réduire les erreurs, et créer une documentation durable et claire.
+
+## Comparaison avec la méthode MERISE
+
+### Avantages / Inconvénients de l’UML
+
+| **Avantages**                                                                 | **Inconvénients**                                               |
+| ----------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| Langage standardisé, largement utilisé.                                       | Complexe à apprendre pour les débutants.                        |
+| Flexible et adapté aux systèmes modernes.                                     | Peut être trop détaillé pour les petits projets.                |
+| Permet de modéliser aussi bien la structure que le comportement d’un système. | Les diagrammes deviennent parfois trop denses.                  |
+| Facilite la communication entre les parties prenantes.                        | Nécessite des outils spécialisés pour être pleinement exploité. |
+
 ---
+
+### Avantages / Inconvénients de MERISE
+
+| **Avantages**                                            | **Inconvénients**                                                   |
+| -------------------------------------------------------- | ------------------------------------------------------------------- |
+| Méthode simple et accessible.                            | Non adaptée aux projets orientés objet modernes.                    |
+| Bien adaptée aux systèmes d’information classiques (SI). | Moins flexible face aux architectures complexes.                    |
+| Bonne structuration des bases de données et des flux.    | Peu de prise en charge des concepts comportementaux ou interactifs. |
+
+## Avantages / Inconvénients
 
 <a href="#sommaire">
   <img src="../../assets/button/back_to_top.png" alt="Back to top" style="width: 150px; height: auto;">
