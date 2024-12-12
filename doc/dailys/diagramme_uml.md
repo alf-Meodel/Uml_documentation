@@ -9,6 +9,10 @@
 
 # GET STARTED UML
 
+```
+cas d'utilisation, classe, sequence, activité
+```
+
 ## Sommaire
 
 <!-- ![border](assets/line/line_pink_point_l.png) -->
@@ -34,16 +38,51 @@
   - [x] [Trouver des outils type clients lourds](#1-trouver-des-outils-type-clients-lourds)
   - [x] [Trouver des outils cloud](#2-trouver-des-outils-cloud)
 - [x] [Initiation au diagramme de cas d'utilisation](#initiation-au-diagramme-de-cas-dutilisation)
-  - [ ] [Comprendre les objectifs (d'un point de vue client / d'un point de vue développeur)](#1-comprendre-les-objectifs)
-  - [ ] [Comment représenter un système d'information complet](#2-comment-représenter-un-système-dinformation-complet)
-  - [ ] [Etudier les concepts clés du diagramme de cas d'utilisation](#3-étudier-les-concepts-clés-du-diagramme-de-cas-dutilisation)
-    - [ ] les acteurs
-  - [ ] les cas d'utilisation
-  - [ ] le système
-  - [ ] Comprendre le lien entre les User Stories et les cas d'utilisation
-- [ ] Cas pratique
+  - [x] [Comprendre les objectifs (d'un point de vue client / d'un point de vue développeur)](#1-comprendre-les-objectifs)
+  - [x] [Comment représenter un système d'information complet](#2-comment-représenter-un-système-dinformation-complet)
+  - [x] [Etudier les concepts clés du diagramme de cas d'utilisation](#3-étudier-les-concepts-clés-du-diagramme-de-cas-dutilisation)
+    - [x] [les acteurs](#les-acteurs-)
+  - [x] [les cas d'utilisation](#les-cas-dutilisation-)
+  - [x] [le système](#le-système-)
+  - [x] [Comprendre le lien entre les User Stories et les cas d'utilisation](#7-comprendre-le-lien-entre-les-user-stories-et-les-cas-dutilisation)
+- [x] [Cas pratique](#cas-pratique)
   - [ ] Réaliser une carte mentale des diagrammes
   - [ ] Réaliser le diagramme de cas d'utilisation d'un DAB
+
+![border](../../assets/line/line-teal-point_r.png)
+
+## Les elements du diagramme de cas d’utilisation :
+
+#### Le système :
+
+```
+Représenté par une boîte rectangulaire, il délimite les frontières du système étudié.
+```
+
+#### Les acteurs :
+
+```
+Entités (humaines ou systèmes externes) interagissant avec le système.
+```
+
+#### Les cas d'utilisation :
+
+```
+Actions ou fonctionnalités que le système offre aux acteurs.
+```
+
+#### Relations :
+
+```
+Association : Interaction entre un acteur et un cas d’utilisation.
+```
+
+#### Include :
+
+```
+Un cas d’utilisation inclut un autre pour éviter les répétitions (réutilisation).
+Extend : Un cas d’utilisation optionnel est ajouté sous certaines conditions.
+```
 
 ![border](../../assets/line/line-teal-point_r.png)
 
@@ -103,10 +142,6 @@ UML se divise en **deux grandes catégories** de diagrammes :
 ---
 
 #### **2. Les diagrammes existants**
-
-##### Ceux que nosu allons utiliser :
-
-cas d'utilisation, classe, sequence, activité
 
 | **Type**            | **Diagrammes UML**                                                                                                                                                                                      |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -187,14 +222,16 @@ Les outils **cloud** permettent de travailler directement depuis un navigateur, 
 
 ---
 
+![border](../../assets/img/cas_utilisation.png)
+
 #### **1. Comprendre les objectifs**
 
 Les objectifs du diagramme de cas d’utilisation varient selon la perspective.
 
-| **Point de vue** | **Objectifs**                                                                                                                |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| **Client**       | Comprendre clairement les fonctionnalités offertes par le système, représentées de manière visuelle et intuitive.            |
-| **Développeur**  | Identifier et formaliser les exigences fonctionnelles, et planifier le développement en fonction des interactions attendues. |
+| **Point de vue** | **Objectifs**                                                                                 |
+| ---------------- | --------------------------------------------------------------------------------------------- |
+| **Client**       | Visualiser simplement les fonctionnalités disponibles dans le système.                        |
+| **Développeur**  | Comprendre le contexte et les interactions concrètes entre les utilisateurs et l'application. |
 
 ---
 
@@ -255,6 +292,10 @@ Un diagramme de cas d’utilisation montre :
 | **Lien**             | Les cas d’utilisation traduisent les User Stories en fonctionnalités spécifiques, visualisées dans le système. |
 
 ---
+
+## Cas pratique
+
+![border](../../assets/line/line-teal-point_r.png)
 
 <a href="#sommaire">
   <img src="../../assets/button/back_to_top.png" alt="Back to top" style="width: 150px; height: auto;">
