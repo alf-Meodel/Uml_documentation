@@ -10,9 +10,9 @@
 
 ## Sommaire
 
-- [Découverte et diagramme de cas d'utilisation](#uml---découverte-et-diagramme-de-cas-dutilisation)
+- [ 12/12/2024 Découverte et diagramme de cas d'utilisation](#uml---découverte-et-diagramme-de-cas-dutilisation)
 
-## Dailys
+## Mise en pratique des Dailys
 
 - [D1 Introduction à java à la POO](/doc/dailys/diagramme_uml.md)
 
