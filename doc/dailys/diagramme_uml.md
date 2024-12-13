@@ -81,8 +81,19 @@ Nous avons le scenario suivant : **Commander**
 - ensemble de scénarios réalisant un objectif de l'utilisateur
 - Fonctionnalités principales du système du point de vue extérieur
 
-**Acteur** : entité qui interragit avec le systeme - Personne, capteur , chose logiciel exterieure au systeme - Représente un role ( plusieus roles possibles pour une meme entité ) - Identifié par le nom de role
+**Acteur** : entité qui interragit avec le systeme
+
+- Personne, capteur , chose logiciel exterieure au systeme
+- Représente un role ( plusieus roles possibles pour une meme entité )
+- Identifié par le nom de role
+
+- Les utilisateurs peuvent avoir plusieurs roles ; par exemple si un utilisateur n'est pas encore connecté il est un usager non connecté mais il change de status pour personnage inscrit
+
 **Cas d'utilisation** : Fonctionnalité visible de l'exterieur
+
+- Action déclenchée par un acteur
+- Identifié par une action (vere à l'infinitif )
+- Vision du système centrée sur l'utilisateur
 
 ## Les elements du diagramme de cas d’utilisation :
 
@@ -120,6 +131,10 @@ Extend : Un cas d’utilisation optionnel est ajouté sous certaines conditions.
 ![border](../../assets/line/line-teal-point_r.png)
 
 # Découverte de l'UML
+
+## Le sens des fleches
+
+![diagramme_uml](/assets/img/fleches.jpeg)
 
 ## Comprendre la signification d UML
 
