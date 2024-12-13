@@ -51,6 +51,39 @@ cas d'utilisation, classe, sequence, activité
 
 ![border](../../assets/line/line-teal-point_r.png)
 
+# COMMENT CREER NOTRE DIAGRAMME DE CAS D'UTILISATION
+
+### Se pose Trois questions :
+
+- Définir les utilisations principales du système : à quoi sert il ?
+- Définir l'environnement du système : qui va l"utiliser ou intérragir avec lui ?
+- Définir les limittes du système : ou s'arrête sa responsabilité ?
+
+### Créer un scénario d'utilisation :
+
+- elle doit **décrire l'interraction en l'utilisateur et le système**
+- et doit surtout **permettre à l'utilisateur de réaliser un objectif**
+
+#### Par exemple :
+
+Pour le système : **site de vente en ligne**
+Nous avons le scenario suivant : **Commander**
+
+##### Description :
+
+- Le client s'authentifie dans le syeteme et choisi une adresse et un mode de livraison .
+- le système indique le montant total de sa commande au client
+- Le client donne ses informations de paiement
+- la transaction est effectué et le systeme en informe le client par mail
+
+### Cas d'utilisation :
+
+- ensemble de scénarios réalisant un objectif de l'utilisateur
+- Fonctionnalités principales du système du point de vue extérieur
+
+**Acteur** : entité qui interragit avec le systeme - Personne, capteur , chose logiciel exterieure au systeme - Représente un role ( plusieus roles possibles pour une meme entité ) - Identifié par le nom de role
+**Cas d'utilisation** : Fonctionnalité visible de l'exterieur
+
 ## Les elements du diagramme de cas d’utilisation :
 
 #### Le système :
@@ -94,10 +127,14 @@ L’UML **(Unified Modeling Language)** est un langage de modélisation graphiqu
 
 ## Pour quels besoins à été créé UML
 
-- L’UML a été créé au milieu des années 1990 pour répondre aux défis de la conception de logiciels complexes.
-- Il visait à standardiser les méthodes de modélisation qui étaient nombreuses et incompatibles (OMT, Booch, etc.), à simplifier la conception des systèmes et à soutenir la programmation orientée objet, alors en plein essor.
-- UML facilite la communication entre les parties prenantes, améliore la qualité des logiciels en identifiant les problèmes en amont, et crée une documentation claire et durable pour des projets complexes.
+- L’UML a été créé au milieu des années **1990** pour répondre aux défis de la conception de logiciels complexes.
+- Il visait à **standardiser les méthodes de modélisation qui étaient nombreuses** et incompatibles (OMT, Booch, etc.),
+- à simplifier la conception des systèmes et **à soutenir la programmation orientée objet**, alors en plein essor.
+- UML **facilite la communication** entre les parties prenantes,
+- améliore la qualité des logiciels **en identifiant les problèmes en amont**, et crée une documentation claire et durable pour des projets complexes.
 - C’est un outil essentiel pour structurer et planifier les systèmes logiciels modernes.
+
+![POurquoi uml](../../assets/img/analyse%20des%20besoins.png)
 
 ## Quels sont les objectifs d'utiliser UML
 
