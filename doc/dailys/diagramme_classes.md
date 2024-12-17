@@ -14,8 +14,8 @@
 - [x] Finir les objectifs de la veille
 
 - [x] Approfondir les connaissances sur le diagramme de classes
-  - [x] Comprendre la notion d'association
-  - [x] Etudier les différentes multiplicités et leur signification
+  - [x] [Comprendre la notion d'association](#comprendre-la-notion-dassociation)
+  - [x] [Etudier les différentes multiplicités et leur signification](#etudier-les-différentes-multiplicités-et-leur-signification)
   - [x] Comprendre l'agrégation (losange vide)
   - [x] Comprendre la composition (losange plein)
   - [x] Etudier les différences entre les 2
