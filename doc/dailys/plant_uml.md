@@ -12,16 +12,16 @@
 ## Sommaire
 
 - [x] [Structure de base d'un diagramme PlantUML](#structure-de-base-dun-diagramme-plantuml)
-- [ ] [Acteurs et Participants](#acteurs-et-participants)
-- [ ] [Envoi de Messages](#envoi-de-messages)
-- [ ] [Fragments conditionnels : alt et else](#envoi-de-messages)
-- [ ] [Fragment optionnel : opt](#fragment-optionnel--opt)
-- [ ] [Boucles : loop](#boucles--loop)
-- [ ] [Notes](#notes)
+- [x] [Acteurs et Participants](#acteurs-et-participants)
+- [x] [Envoi de Messages](#envoi-de-messages)
+- [x] [Fragments conditionnels : alt et else](#envoi-de-messages)
+- [x] [Fragment optionnel : opt](#fragment-optionnel--opt)
+- [x] [Boucles : loop](#boucles--loop)
+- [x] [Notes](#notes)
 
-- [ ] [Exemple complet](#exemple-complet)
-- [ ] [Rendu visuel](#rendu-visuel)
-- [ ] [Outils pour tester PlantUML](#outils-pour-tester-plantuml)
+- [x] [Exemple complet](#exemple-complet)
+- [x] [Rendu visuel](#rendu-visuel)
+- [x] [Outils pour tester PlantUML](#outils-pour-tester-plantuml)
 
 <!-- ![border](assets/line/line_pink_point_l.png) -->
 
@@ -200,8 +200,6 @@ Ce code génère un **diagramme clair** avec :
 3. **Graphviz** : Utilisé en arrière-plan pour le rendu.
 
 ---
-
-N'hésitez pas si vous avez d'autres questions ou si vous souhaitez des variantes sur d'autres types de diagrammes UML comme **classes**, **activités** ou **cas d'utilisation** ! 😊
 
 ![border](../../assets/line/line-pink-point_l.png)
 

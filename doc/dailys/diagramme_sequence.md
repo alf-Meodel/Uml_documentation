@@ -38,6 +38,8 @@
 
 ![border](../../assets/line/line-pink-point_l.png)
 
+![border](../../assets/img/syntaxes_sequence.png)
+
 # Découverte du diagramme de séquence
 
 Le **diagramme de séquence UML** est un outil qui représente **l'ordre temporel** des **interactions** entre des objets pour accomplir une tâche spécifique. Il montre **qui communique avec qui** et **dans quel ordre**, ce qui en fait un outil essentiel pour modéliser des comportements dynamiques.
