@@ -11,10 +11,13 @@
 ## Sommaire
 
 - [ 12/12/2024 Découverte et diagramme de cas d'utilisation](#uml---découverte-et-diagramme-de-cas-dutilisation)
+- [ 12/12/2024 Découverte et diagramme de cas d'utilisation]
 
 ## Mise en pratique des Dailys
 
 - [D1 Introduction à java à la POO](/doc/dailys/diagramme_uml.md)
+- [D2 Use cases](/doc/dailys/cas_utilisation_classes.md)
+- [D3 Diagramme de classe](/doc/dailys/diagramme_classes.md)
 
 ![border](../assets/line/border_deco_rb.png)
 
@@ -78,8 +81,35 @@
   - [ ] L'encapsulation
   - [ ] Etudier les différences avec le MCD de la méthode MERISE
 - [ ] Cas pratique
+
   - [ ] Réaliser le diagramme de cas d'utilisation d'une société de réservation de taxis
   - [ ] Réaliser le diagramme de classes d'une bibliothèque
+
+  # Objectifs journaliers
+
+## Lundi 16/12/2024 :
+
+### Diagramme de classes - Notions avancées
+
+- [ ] Finir les objectifs de la veille
+
+- [ ] Approfondir les connaissances sur le diagramme de classes
+  - [ ] Comprendre la notion d'association
+  - [ ] Etudier les différentes multiplicités et leur signification
+  - [ ] Comprendre l'agrégation
+  - [ ] Comprendre la composition
+  - [ ] Etudier les différences entre les 2
+  - [ ] Intégrer les packages
+- [ ] Comprendre l'héritage
+  - [ ] Savoir représenter un généralisation / une spécialisation
+  - [ ] Représenter une classe abstraite
+  - [ ] Représenter une interface
+- [ ] Savoir lire un diagramme de classes complets
+
+- [ ] Cas pratiques
+  - [ ] Modéliser un système pour gérer les activités d'un cinéma (films, salles, séances)
+  - [ ] Modéliser la gestion d'une école
+  - [ ] Modéliser un système de gestion de projets (projets, équipes, membres, tâches, sous tâches)
 
 <a href="#sommaire">
   <img src="../assets/button/back_to_top.png" alt="Back to top" style="width: 150px; height: auto;">
