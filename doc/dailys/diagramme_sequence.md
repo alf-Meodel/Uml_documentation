@@ -11,26 +11,26 @@
 
 ## Sommaire
 
-- [x] Découverte du diagramme de séquences
-  - [ ] Comprendre ses objectifs
-  - [ ] Identifier les différents éléments
-    - [ ] Les acteurs
-  - [ ] Les messages
-    - [ ] Comprendre et représenter les messages synchrones
-    - [ ] Comprendre et représenter les messages asynchrones
-    - [ ] Comprendre et représenter les messages auto-référencées
+- [x] [Découverte du diagramme de séquences](#découverte-du-diagramme-de-séquence)
+  - [x] [Comprendre ses objectifs](#2-comprendre-ses-objectifs)
+  - [x] [Identifier les différents éléments](#3-identifier-les-différents-éléments)
+    - [x] [Les acteurs](#4-les-acteurs)
+  - [x] [Les messages](#les-messages)
+    - [x] [Comprendre et représenter les messages synchrones](#6-comprendre-et-représenter-les-messages-synchrones)
+    - [x] [Comprendre et représenter les messages asynchrones](#7-comprendre-et-représenter-les-messages-asynchrones)
+    - [x] [Comprendre et représenter les messages auto-référencées](#comprendre)
   - [x] [Comprendre et savoir utiliser les structures](#comprendre-et-savoir-utiliser-les-structures)
-    - [ ] La structure alt
-    - [ ] La structure opt
-    - [ ] La structure loop
-    - [ ] La structure par
-    - [ ] La structure ref
-- [ ] Comprendre le passage du diagramme de classes au diagramme de séquences
-  - [ ] Comment passer de l'un à l'autre
-  - [ ] Lien entre les classes et les acteurs
-  - [ ] Comprendre l'utilité pour les développeurs
-  - [ ] Comprendre la possibilité de génération de code
-- [ ] Cas pratiques :
+    - [x] [La structure alt](#1-alt-alternative)
+    - [x] [La structure opt](#2-opt-option)
+    - [x] [La structure loop](#3-loop-boucle)
+    - [x] [La structure par](#4-par-parallèle)
+    - [x] [La structure ref](#5-ref-référence)
+- [x] [Comprendre le passage du diagramme de classes au diagramme de séquences](#comprendre-le-passage-du-diagramme-de-classes-au-diagramme-de-séquence)
+  - [x] [Comment passer de l'un à l'autre](#2-comment-passer-de-lun-à-lautre)
+  - [x] [Lien entre les classes et les acteurs](#3-lien-entre-les-classes-et-les-acteurs)
+  - [x] [Comprendre l'utilité pour les développeurs](#4-comprendre-lutilité-pour-les-développeurs)
+  - [x] [Comprendre la possibilité de génération de code](#5-comprendre-la-possibilité-de-génération-de-code)
+- [x] [Cas pratiques :](#cas-pratiques-)
   - [ ] Modéliser le diagramme de séquences pour un système de réservation dans un restaurant
   - [ ] Modéliser le diagramme de séquences pour la réservation d'un livre dans une bibliothèque
 
@@ -38,7 +38,139 @@
 
 ![border](../../assets/line/line-pink-point_l.png)
 
-## Comprendre et savoir utiliser les structures
+# Découverte du diagramme de séquence
+
+Le **diagramme de séquence UML** est un outil qui représente **l'ordre temporel** des **interactions** entre des objets pour accomplir une tâche spécifique. Il montre **qui communique avec qui** et **dans quel ordre**, ce qui en fait un outil essentiel pour modéliser des comportements dynamiques.
+
+---
+
+## Comprendre ses objectifs
+
+- **Visualiser les interactions** entre acteurs et objets.
+- **Clarifier le flux d'exécution** pour un scénario précis (ex: création d'un utilisateur).
+- **Décrire l’ordre temporel** des échanges de messages.
+- **Identifier les responsabilités** de chaque objet.
+- **Faciliter la compréhension** pour les développeurs, analystes et non-techniciens.
+
+---
+
+## Identifier les différents éléments
+
+Les principaux éléments d’un diagramme de séquence sont :
+
+1. **Acteurs** : Entités externes interagissant avec le système.
+2. **Objets** : Instances de classes avec lesquelles les acteurs communiquent.
+3. **Ligne de vie** : Ligne verticale représentant la durée d’existence d’un objet.
+4. **Messages** : Flèches montrant les appels entre les objets.
+5. **Activation** : Rectangle sur la ligne de vie montrant qu’un objet exécute une opération.
+6. **Retour** : Flèches pointillées représentant le retour d’une méthode.
+7. **Boucles et conditions** : Ex. `loop`, `alt`, `opt` pour des cas spécifiques.
+8. **Messages auto-référencés** : Un objet s’appelle lui-même.
+
+---
+
+## Les acteurs
+
+- **Rôle** : Les acteurs sont des entités externes qui interagissent avec le système (ex: utilisateur, système tiers).
+- **Représentation** : Une **figure humaine stylisée** ou un rectangle avec un nom placé à gauche ou à droite.
+- **Interaction** : L'acteur déclenche des messages vers les objets.
+
+**Exemple :**
+
+```plaintext
+Utilisateur → [Objet Compte] : déposerArgent()
+```
+
+![border](../../assets/line/line-pink-point_l.png)
+
+# Les messages
+
+- Les **messages** sont des flèches représentant les **interactions** entre acteurs et objets.
+- Chaque message correspond à l'**appel d'une méthode** ou d’une action.
+- Ils incluent :
+  - **Nom du message** : le nom de la méthode appelée.
+  - **Flèche** : Direction de l’appel.
+
+---
+
+### **6. Comprendre et représenter les messages synchrones**
+
+- Un **message synchrone** est un **appel bloquant** : l’émetteur attend la fin de l’exécution avant de continuer.
+- **Représentation** : Une **flèche pleine** avec une **pointe pleine**.
+
+**Exemple UML :**
+
+```plaintext
+ObjetA → ObjetB : calculer()
+ObjetB → ObjetA : résultat  (flèche pointillée pour le retour)
+```
+
+- **Activation** : Lors de l’appel, un rectangle d’activation apparaît sur la ligne de vie de `ObjetB`.
+
+---
+
+### **7. Comprendre et représenter les messages asynchrones**
+
+- Un **message asynchrone** ne bloque pas l’émetteur : il continue à exécuter d’autres actions sans attendre de réponse.
+- **Représentation** : Une **flèche pleine** avec une **pointe ouverte**.
+
+**Exemple UML :**
+
+```plaintext
+ObjetA → ObjetB : envoyerNotification()
+```
+
+- Les messages asynchrones sont courants dans les **systèmes distribués** ou les interactions basées sur des **queues de messages**.
+
+---
+
+### **8. Comprendre et représenter les messages auto-référencés**
+
+- Un **message auto-référencé** est un appel **qu’un objet s’envoie à lui-même** (par exemple, une méthode qui s’appelle récursivement ou déclenche une autre méthode de la même classe).
+
+**Représentation** :
+
+- Une **flèche courbe** qui part et revient vers le même objet.
+- L'activation montre la **durée de l'appel**.
+
+**Exemple UML :**
+
+```plaintext
+ObjetA → ObjetA : vérifierConditions()
+```
+
+**Exemple visuel :**
+
+```plaintext
++----------------+
+|    ObjetA      |
++----------------+
+      |
+      |--------------+
+      | vérifier()   |
+      |--------------+
+      |              |
+```
+
+---
+
+### **Résumé des concepts**
+
+| Élément                    | Description                                         | Représentation UML            |
+| -------------------------- | --------------------------------------------------- | ----------------------------- |
+| **Acteurs**                | Entité externe qui interagit avec le système.       | Figure humaine / Rectangle    |
+| **Objets**                 | Instances de classes qui interagissent entre elles. | Rectangle avec nom            |
+| **Message synchrone**      | Appel où l’émetteur attend la réponse.              | Flèche pleine, pointe pleine  |
+| **Message asynchrone**     | Appel où l’émetteur **n’attend pas** la réponse.    | Flèche pleine, pointe ouverte |
+| **Message auto-référencé** | Appel d’un objet vers lui-même.                     | Flèche courbée                |
+| **Activation**             | Représente l’exécution d’une méthode.               | Rectangle sur la ligne de vie |
+| **Message de retour**      | Résultat d’une méthode.                             | Flèche pointillée             |
+
+---
+
+![border](../../assets/line/line-pink-point_l.png)
+
+# Comprendre et savoir utiliser les structures
 
 Voici des explications plus précises pour chaque opérateur **UML** dans un **diagramme de séquence**, avec 200 caractères supplémentaires et en abordant les subtilités comme **`<0..*>`** ou d’autres notations spécifiques.
 
@@ -78,29 +210,7 @@ opt [userLoggedIn]
 end opt
 ```
 
-- Ici, `showProfile()` s'exécute seulement si `userLoggedIn` est vrai.
-
-### **1. Acteurs et objets**
-
-- **Acteurs** : Représentent les entités externes qui interagissent avec le système (utilisateurs, systèmes tiers).
-- **Objets** : Placés en haut, chaque objet a une ligne de vie verticale symbolisant sa durée d'existence.
-
----
-
-### **2. Message simple et synchrone**
-
-- **Message synchrone** : La flèche pleine pointe vers le destinataire. L’émetteur **attend** la réponse avant de continuer.
-- **Message asynchrone** : Une flèche avec pointe ouverte, l’émetteur **n’attend pas**.
-
----
-
-### **3. Message de retour**
-
-- Une **flèche en pointillés** retourne vers l’émetteur. Elle indique qu’une opération a été exécutée et que des résultats (ou un état) sont renvoyés à l’objet appelant.
-
----
-
-### **4. Loop (boucle)**
+### **3. Loop (boucle)**
 
 - Le bloc **loop** exécute un groupe d'interactions de manière **répétée** tant qu'une condition `[condition]` est vraie.
 - **`<0..*>`** signifie qu’une interaction peut être répétée **0 ou plusieurs fois**, selon la condition.
@@ -117,7 +227,11 @@ end loop
 
 ---
 
-### **7. Par (parallèle)**
+- Ici, `showProfile()` s'exécute seulement si `userLoggedIn` est vrai.
+
+---
+
+### **4. Par (parallèle)**
 
 - **Par** représente des interactions **parallèles**. Les branches séparées par `and` s’exécutent **simultanément**.
 - Cela peut montrer plusieurs processus ou threads.
@@ -134,9 +248,7 @@ end par
 
 - Les deux méthodes `downloadFile()` et `showProgress()` s’exécutent en même temps.
 
----
-
-### **8. Ref (référence)**
+### **5. Ref (référence)**
 
 - **Ref** appelle un **autre diagramme de séquence** déjà défini. Cela évite de **répéter** les interactions complexes.
 
@@ -148,63 +260,127 @@ ref AuthenticationSequence
 
 - Cela signifie que le diagramme actuel fait appel à un sous-diagramme "AuthenticationSequence".
 
+![border](../../assets/line/line-pink-point_l.png)
+
+# Comprendre le passage du diagramme de classes au diagramme de séquence
+
+### **Diagramme de classes :**
+
+- **Statique** : Montre la structure du système avec les **classes**, leurs **attributs**, **méthodes**, et leurs relations (association, héritage, etc.).
+- Il définit les **composants** du système.
+
+### **Diagramme de séquence :**
+
+- **Dynamique** : Montre **l'interaction** entre les objets des classes pour accomplir un scénario spécifique dans le temps.
+- Il décrit **le comportement** d’une fonctionnalité.
+
 ---
 
-### **9. Break (interruption)**
+## **2. Comment passer de l’un à l’autre**
 
-- **Break** interrompt **immédiatement** la séquence en cas de condition spécifique. Le reste du bloc est ignoré.
+1. **Sélection d’un scénario** :
 
-**Exemple UML** :
+   - Choisissez un cas d’utilisation ou une fonctionnalité (ex. : "Créer un utilisateur").
+
+2. **Identifier les classes concernées** :
+
+   - Depuis le diagramme de classes, repérez les classes qui interviendront dans le scénario.
+
+3. **Instancier des objets** :
+
+   - Créez des **objets** de ces classes dans le diagramme de séquence (ligne de vie).
+
+4. **Tracer les messages** :
+   - Ajoutez les **interactions** sous forme de messages pour montrer les **appels de méthodes** et les réponses.
+
+**Exemple :**
+
+| **Diagramme de classes**                   | **Diagramme de séquence**                           |
+| ------------------------------------------ | --------------------------------------------------- |
+| Classe `Utilisateur` avec méthode `save()` | Objet `Utilisateur1` appelle `save()` sur `DAO`.    |
+| Classe `DAO` (Data Access Object)          | DAO répond à `save()` avec succès (message retour). |
+
+---
+
+## **3. Lien entre les classes et les acteurs**
+
+### **Lien :**
+
+- Les **acteurs** (externes) déclenchent des actions dans le système.
+- Dans le diagramme de classes, les acteurs ne sont pas représentés.
+- Dans le diagramme de séquence, **les acteurs** interagissent avec des **objets instanciés** à partir des classes.
+
+**Exemple :**  
+Un **acteur** "Utilisateur" déclenche une interaction avec la **classe** `Compte`.
 
 ```plaintext
-break [errorOccurred]
-   displayError()
-end break
-```
-
-- `displayError()` s’exécute si `errorOccurred` est vrai. La séquence s’arrête là.
-
----
-
-### **10. Critical (section critique)**
-
-- **Critical** bloque tout accès concurrentiel aux actions dans ce bloc pour éviter les **problèmes de synchronisation**.
-
-**Exemple UML** :
-
-```plaintext
-critical
-   writeToFile()
-end critical
-```
-
-- Ici, `writeToFile()` est protégé contre toute exécution parallèle.
-
----
-
-### **11. Création et destruction d’objets**
-
-- **Création** : Une flèche pointe vers l’objet créé avec une **ligne de vie** démarrant au moment de l'appel.
-- **Destruction** : Une **croix (X)** au bas de la ligne indique la **fin de vie** de l’objet.
-
-**Exemple UML** :
-
-```plaintext
-create ObjectX
-ObjectX -> destroy
+Diagramme de séquence :
+Utilisateur → Objet Compte → Méthode déposerArgent().
 ```
 
 ---
 
-### **Résumé de `<0..*>` et autres notations**
+## **4. Comprendre l’utilité pour les développeurs**
 
-- **`<0..*>`** : Exécution entre **0 et un nombre infini** de fois (boucle facultative).
-- **`<1..*>`** : Au moins une exécution requise.
-- **`<n..m>`** : Exactement **n à m itérations**.
+1. **Clarification des interactions** :
+
+   - Les développeurs voient comment les **objets interagissent** pour accomplir une tâche.
+
+2. **Décomposition des responsabilités** :
+
+   - Facilite la compréhension du **rôle** de chaque objet.
+
+3. **Vérification du modèle statique** :
+
+   - Le diagramme de séquence aide à valider que les méthodes définies dans le diagramme de classes suffisent pour répondre aux besoins.
+
+4. **Communication claire** :
+   - Offre une vision simple et **séquentielle** des flux pour les **équipes**.
 
 ---
 
-Ces subtilités permettent de détailler précisément le **comportement** d’un diagramme de séquence, notamment en introduisant des boucles, des alternatives conditionnelles et des interactions parallèles.
+## **5. Comprendre la possibilité de génération de code**
+
+### **Génération automatique :**
+
+- Les outils UML comme **StarUML**, **Visual Paradigm** ou **Enterprise Architect** permettent de **générer du code** depuis les diagrammes.
+- Le diagramme de classes sert à générer les **structures de classes** (en Java, C#, etc.).
+- Le diagramme de séquence peut aider à générer des **squelettes de méthodes**.
+
+**Processus :**
+
+1. **Diagramme de classes → Code** :
+   - Création des classes, attributs, constructeurs et méthodes **vides**.
+2. **Diagramme de séquence → Complétion** :
+   - Ajout des appels de méthodes et de leur **séquence logique**.
+
+**Exemple :**  
+Si un diagramme de séquence montre `Utilisateur.save()`, l’outil peut générer :
+
+```java
+class Utilisateur {
+    void save() {
+        // À compléter
+    }
+}
+```
+
+---
+
+# Cas pratiques :
+
+## Process
+
+- Scénario détaillé avec les fragments :
+- Client envoie une demande de réservation au Système de Réservation.
+- Système de Réservation vérifie la Base de Données pour voir s'il y a de la place.
+- Si la place est disponible (alt - fragment conditionnel) :
+  a. Le Système confirme la disponibilité au Client.
+  b. Le Client valide la réservation.
+  c. Le Système enregistre la réservation dans la Base de Données.
+  Sinon :
+  a. Le Système informe le Client que la réservation est impossible.
+  Optionnellement (opt - fragment optionnel), une notification est envoyée au Personnel du Restaurant.
 
 <a href="#sommaire">
   <img src="../../assets/button/back_to_top.png" alt="Back to top" style="width: 150px; height: auto;">

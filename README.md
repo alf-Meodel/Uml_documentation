@@ -20,6 +20,7 @@
 # Navigation
 
 - [Liste des dailys](./doc/liste_dailys.md)
+- [Plant UML](./doc/dailys/plant_uml.md)
 
 ![border](./assets/line/line-teal-point_r.png)
 
