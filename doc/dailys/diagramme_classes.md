@@ -11,25 +11,25 @@
 
 ## Sommaire
 
-- [ ] Finir les objectifs de la veille
+- [x] Finir les objectifs de la veille
 
 - [x] Approfondir les connaissances sur le diagramme de classes
-  - [ ] Comprendre la notion d'association
-  - [ ] Etudier les différentes multiplicités et leur signification
-  - [ ] Comprendre l'agrégation (losange vide)
-  - [ ] Comprendre la composition (losange plein)
-  - [ ] Etudier les différences entre les 2
-  - [ ] Intégrer les packages
-- [ ] Comprendre l'héritage
-  - [ ] Savoir représenter un généralisation / une spécialisation
-  - [ ] Représenter une classe abstraite
-  - [ ] Représenter une interface
-- [ ] Savoir lire un diagramme de classes complets
+  - [x] Comprendre la notion d'association
+  - [x] Etudier les différentes multiplicités et leur signification
+  - [x] Comprendre l'agrégation (losange vide)
+  - [x] Comprendre la composition (losange plein)
+  - [x] Etudier les différences entre les 2
+  - [x] Intégrer les packages
+- [x] [Comprendre l'héritage](#comprendre-lhéritage)
+  - [x] Savoir représenter un généralisation / une spécialisation
+  - [x] Représenter une classe abstraite
+  - [x] Représenter une interface
+- [x] Savoir lire un diagramme de classes complets
 
-- [ ] Cas pratiques
-  - [ ] Modéliser un système pour gérer les activités d'un cinéma (films, salles, séances)
-  - [ ] Modéliser la gestion d'une école
-  - [ ] Modéliser un système de gestion de projets (projets, équipes, membres, tâches, sous tâches)
+- [x] Cas pratiques
+  - [x] Modéliser un système pour gérer les activités d'un cinéma (films, salles, séances)
+  - [x] Modéliser la gestion d'une école
+  - [x] Modéliser un système de gestion de projets (projets, équipes, membres, tâches, sous tâches)
 
 <!-- ![border](assets/line/line_pink_point_l.png) -->
 
@@ -185,8 +185,6 @@ L’agrégation et la composition sont deux types de relations "tout-partie" dan
 
 ---
 
----
-
 ## Intégrer les packages
 
 ![border](../../assets/img/packages.png)
@@ -202,6 +200,126 @@ Un rectangle avec un onglet supérieur gauche portant le nom du package.
 ### Exemple :
 
 Un package GestionSalles peut contenir des classes Salle, Équipement, Projection.
+
+![border](../../assets/line/line-teal-point_r.png)
+
+# Comprendre l'héritage
+
+## Définition :
+
+Une classe abstraite encapsule des méthodes dites abstraites, c’est-à-dire dont le traitement n’est pas défini dans la classe. Par contre, les classes héritant d’une classe abstraite doivent obligatoirement redéfinir ses méthodes abstraites.
+
+## Ce que c'est vraiment
+
+L'héritage est un mécanisme qui permet à une classe (la classe fille) d'acquérir les propriétés et comportements d'une autre classe (la classe mère). En UML :
+
+- La classe mère est appelée superclasse ou classe parente.
+- La classe fille est appelée sous-classe ou classe dérivée.
+
+## Généralisation / Spécialisation
+
+### Définition
+
+- La généralisation consiste à regrouper des classes similaires dans une classe parent commune (plus générale).
+- La spécialisation consiste à créer des sous-classes qui héritent de la classe parent et ajoutent des propriétés ou des comportements spécifiques.
+
+### Représentation concrète
+
+- Une flèche pleine avec un trait continu pointe de la sous-classe vers la superclasse.
+
+```
+          +------------------+
+          |   Animal         |   <-- Classe mère (superclasse)
+          +------------------+
+          | - nom: String    |
+          | + seDeplacer()   |
+          +------------------+
+                 ^
+                 |
+      -----------------------
+      |                     |
++------------------+   +------------------+
+|   Chat           |   |   Chien          |  <-- Sous-classes
++------------------+   +------------------+
+| + ronronner()    |   | + aboyer()       |
++------------------+   +------------------+
+```
+
+## Représenter une classe abstraite
+
+Une classe abstraite est une classe qui ne peut pas être instanciée directement. Elle sert de base aux classes dérivées.
+
+### Conventions pour une classe abstraite :
+
+- Le nom de la classe est écrit en italique.
+- Les méthodes abstraites sont également en italique.
+- Ajouter le stéréotype <<abstract>> pour indiquer explicitement que la classe est abstraite.
+
+```
++------------------------+
+|      <<abstract>>      |
+|       Forme            |   <-- Nom en italique
++------------------------+
+| - couleur: String      |
++------------------------+
+| + dessiner(): void     |   <-- Méthode abstraite (en italique)
++------------------------+
+         ^
+         |
+----------------------------
+|                          |
++------------------------+   +------------------------+
+|   Rectangle           |   |   Cercle              |
++------------------------+   +------------------------+
+| - largeur: int        |   | - rayon: int          |
++------------------------+   +------------------------+
+| + dessiner(): void     |   | + dessiner(): void     |
++------------------------+   +------------------------+
+```
+
+## Représenter une interface
+
+Une interface définit un contrat que les classes implémentent. Elle ne contient que des méthodes abstraites (et éventuellement des constantes).
+
+- Conventions pour une interface :
+- Utiliser le stéréotype <<interface>>.
+- Le nom de l'interface est en normal (pas en italique).
+- Les méthodes n'ont pas d'implémentation et sont listées comme abstraites.
+- Une flèche en pointillés avec un triangle pointe de la classe implémentante vers l'interface.
+
+## Représentation visuelle :
+
+```
+          +-----------------------+
+          |      <<interface>>    |
+          |       Dessinable      |   <-- Interface
+          +-----------------------+
+          | + dessiner(): void    |
+          +-----------------------+
+                  ^
+                  |
+         -------------------
+         |                 |
++----------------+   +----------------+
+| Rectangle      |   | Cercle         |   <-- Classes implémentant l'interface
++----------------+   +----------------+
+| - largeur: int |   | - rayon: int   |
++----------------+   +----------------+
+| + dessiner()   |   | + dessiner()   |
++----------------+   +----------------+
+
+```
+
+L'interface Dessinable est implémentée par les classes Rectangle et Cercle.
+La flèche en pointillés indique que les classes concrètes s'engagent à fournir une implémentation de la méthode dessiner().
+
+### Résumé des symboles UML
+
+- [Heritage link](https://www.coursaline.com/format-texte/comprendre-les-classes-abstraites-en-UML/110)
+
+![alt text](/assets/img/abstract.png)
+
+![alt text](/assets/img/abstract_0.png)
 
 ![border](../../assets/line/line-teal-point_r.png)
 

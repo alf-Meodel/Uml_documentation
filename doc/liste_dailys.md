@@ -18,6 +18,7 @@
 - [D1 Introduction à java à la POO](/doc/dailys/diagramme_uml.md)
 - [D2 Use cases](/doc/dailys/cas_utilisation_classes.md)
 - [D3 Diagramme de classe](/doc/dailys/diagramme_classes.md)
+- [D3 Diagramme de sequence](/doc/dailys/diagramme_sequence.md)
 
 ![border](../assets/line/border_deco_rb.png)
 
@@ -107,9 +108,37 @@
 - [ ] Savoir lire un diagramme de classes complets
 
 - [ ] Cas pratiques
+
   - [ ] Modéliser un système pour gérer les activités d'un cinéma (films, salles, séances)
   - [ ] Modéliser la gestion d'une école
   - [ ] Modéliser un système de gestion de projets (projets, équipes, membres, tâches, sous tâches)
+
+## Mardi 17/12/2024 :
+
+### UML - Diagramme de séquences
+
+- [ ] Découverte du diagramme de séquences
+  - [ ] Comprendre ses objectifs
+  - [ ] Identifier les différents éléments
+    - [ ] Les acteurs
+  - [ ] Les messages
+    - [ ] Comprendre et représenter les messages synchrones
+    - [ ] Comprendre et représenter les messages asynchrones
+    - [ ] Comprendre et représenter les messages auto-référencées
+  - [ ] Comprendre et savoir utiliser les structures
+    - [ ] La structure alt
+    - [ ] La structure opt
+    - [ ] La structure loop
+    - [ ] La structure par
+    - [ ] La structure ref
+- [ ] Comprendre le passage du diagramme de classes au diagramme de séquences
+  - [ ] Comment passer de l'un à l'autre
+  - [ ] Lien entre les classes et les acteurs
+  - [ ] Comprendre l'utilité pour les développeurs
+  - [ ] Comprendre la possibilité de génération de code
+- [ ] Cas pratiques :
+  - [ ] Modéliser le diagramme de séquences pour un système de réservation dans un restaurant
+  - [ ] Modéliser le diagramme de séquences pour la réservation d'un livre dans une bibliothèque
 
 <a href="#sommaire">
   <img src="../assets/button/back_to_top.png" alt="Back to top" style="width: 150px; height: auto;">
