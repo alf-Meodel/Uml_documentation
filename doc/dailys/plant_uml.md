@@ -11,17 +11,25 @@
 
 ## Sommaire
 
-- [x] Finir les objectifs de la veille
+- [x] [Structure de base d'un diagramme PlantUML](#structure-de-base-dun-diagramme-plantuml)
+- [ ] [Acteurs et Participants](#acteurs-et-participants)
+- [ ] [Envoi de Messages](#envoi-de-messages)
+- [ ] [Fragments conditionnels : alt et else](#envoi-de-messages)
+- [ ] [Fragment optionnel : opt](#fragment-optionnel--opt)
+- [ ] [Boucles : loop](#boucles--loop)
+- [ ] [Notes](#notes)
+
+- [ ] [Exemple complet](#exemple-complet)
+- [ ] [Rendu visuel](#rendu-visuel)
+- [ ] [Outils pour tester PlantUML](#outils-pour-tester-plantuml)
 
 <!-- ![border](assets/line/line_pink_point_l.png) -->
 
 ![border](../../assets/line/line-pink-point_l.png)
 
-# Comprendre la notion d'association
-
 ![border](../../assets/line/line-teal-point_r.png)
 
-### **1. Structure de base d'un diagramme PlantUML**
+### Structure de base d'un diagramme PlantUML
 
 Chaque diagramme commence et se termine par :
 
@@ -36,7 +44,7 @@ Chaque diagramme commence et se termine par :
 
 ---
 
-### **2. Acteurs et Participants**
+### Acteurs et Participants
 
 Les **acteurs** et **participants** représentent les éléments qui interagissent dans le diagramme.
 
@@ -57,7 +65,7 @@ participant "Base de Données" as BD
 
 ---
 
-### **3. Envoi de Messages**
+### Envoi de Messages
 
 Les messages représentent des flèches entre les acteurs et les participants pour décrire les interactions.
 
@@ -75,7 +83,7 @@ BD --> SR : Retourner disponibilité
 
 ---
 
-### **4. Fragments conditionnels : `alt` et `else`**
+### Fragments conditionnels : `alt` et `else`
 
 Les fragments `alt` permettent de représenter des **conditions** avec des branches alternatives.
 
@@ -95,7 +103,7 @@ end
 
 ---
 
-### **5. Fragment optionnel : `opt`**
+### Fragment optionnel : `opt`
 
 `opt` est utilisé pour représenter des actions **optionnelles**.
 
@@ -112,7 +120,7 @@ end
 
 ---
 
-### **6. Boucles : `loop`**
+### Boucles : `loop`
 
 Les fragments `loop` permettent de représenter des actions répétées.
 
@@ -129,7 +137,7 @@ end
 
 ---
 
-### **7. Notes**
+### Notes
 
 Vous pouvez ajouter des **notes** pour commenter ou expliquer certaines étapes.
 
@@ -143,7 +151,7 @@ note right of SR : Ici, on vérifie la base de données.
 
 ---
 
-### **8. Exemple complet**
+### Exemple complet
 
 ```
 @startuml Reservation_Restaurant
@@ -174,7 +182,7 @@ note right of SR : La notification est optionnelle.
 
 ---
 
-### **Rendu visuel**
+### Rendu visuel
 
 Ce code génère un **diagramme clair** avec :
 
@@ -185,7 +193,7 @@ Ce code génère un **diagramme clair** avec :
 
 ---
 
-### **Outils pour tester PlantUML**
+### Outils pour tester PlantUML
 
 1. **[PlantUML Online](https://www.plantuml.com/plantuml/)** : Outil en ligne simple pour générer vos diagrammes.
 2. **Intégration VS Code** : Vous pouvez utiliser l'extension **PlantUML** pour générer vos diagrammes directement.
