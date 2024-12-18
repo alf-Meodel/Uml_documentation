@@ -7,17 +7,15 @@
 
 ![border](../../assets/line/border_deco_rt.png)
 
-# UML - Diagramme de séquences
+# UML - Diagramme d'activité
 
 ## Sommaire
 
-### UML - Diagramme d'activité
+- [x] [Découverte du diagramme d'activité](#découverte-du-diagramme-dactivité)
 
-- [ ] Découverte du diagramme d'activité
-
-  - [ ] Comprendre l'utilité du diagramme d'activité
-  - [ ] Dans quels cas l'utiliser ?
-  - [ ] Quels sont ses avantages ?
+  - [x] Comprendre l'utilité du diagramme d'activité
+  - [x] Dans quels cas l'utiliser ?
+  - [x] Quels sont ses avantages ?
 
 - [ ] Identifier les éléments de base
 
@@ -44,9 +42,34 @@
 
 ![border](../../assets/line/line-pink-point_l.png)
 
-# Découverte du diagramme de séquence
+## Découverte du Diagramme d'Activité
 
-Le **diagramme de séquence UML** est un outil qui représente **l'ordre temporel** des **interactions** entre des objets pour accomplir une tâche spécifique. Il montre **qui communique avec qui** et **dans quel ordre**, ce qui en fait un outil essentiel pour modéliser des comportements dynamiques.
+### 1. **Comprendre l'utilité du diagramme d'activité**
+
+Le diagramme d'activité est un outil de modélisation utilisé en ingénierie logicielle, en gestion de processus et en analyse de systèmes pour représenter graphiquement des workflows ou des processus métier. Il permet de :
+
+- Décrire la séquence des activités ou des actions.
+- Identifier les dépendances entre les étapes.
+- Visualiser les décisions et les branches conditionnelles.
+
+### 2. **Dans quels cas l'utiliser ?**
+
+Le diagramme d'activité est particulièrement utile pour :
+
+- **Modéliser des processus métier** : Par exemple, pour visualiser comment un produit passe de l’idée à la production.
+- **Concevoir des flux de travail** : Lors de la définition d’une séquence d'actions à suivre dans un logiciel ou un système.
+- **Comprendre les interactions** entre différents acteurs ou composants d’un système.
+- **Analyser des décisions complexes** : En montrant les points de bifurcation ou de choix conditionnels.
+
+### 3. **Quels sont ses avantages ?**
+
+- **Clarté** : Il offre une représentation visuelle facile à comprendre pour les parties prenantes non techniques.
+- **Simplicité** : Représente les étapes de manière linéaire et intuitive.
+- **Collaboration** : Facilite la communication entre les équipes grâce à un langage visuel commun.
+- **Prise de décision** : Permet d'identifier les goulets d’étranglement ou les inefficacités dans les processus.
+- **Documentation** : Sert de base pour la documentation des workflows et des processus métier.
+
+Souhaitez-vous approfondir un de ces points ou créer un exemple spécifique ?
 
 ---
 
