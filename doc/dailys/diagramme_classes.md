@@ -16,10 +16,10 @@
 - [x] Approfondir les connaissances sur le diagramme de classes
   - [x] [Comprendre la notion d'association](#comprendre-la-notion-dassociation)
   - [x] [Etudier les différentes multiplicités et leur signification](#etudier-les-différentes-multiplicités-et-leur-signification)
-  - [x] Comprendre l'agrégation (losange vide)
-  - [x] Comprendre la composition (losange plein)
-  - [x] Etudier les différences entre les 2
-  - [x] Intégrer les packages
+  - [x] [Comprendre l'agrégation (losange vide)](#comprendre-lagrégation--losange-vide)
+  - [x] [Comprendre la composition (losange plein)](#comprendre-la-composition-losange-plein)
+  - [x] [Etudier les différences entre les 2](#etudier-les-différences-entre-les-2)
+  - [x] [Intégrer les packages](#intégrer-les-packages)
 - [x] [Comprendre l'héritage](#comprendre-lhéritage)
   - [x] Savoir représenter un généralisation / une spécialisation
   - [x] Représenter une classe abstraite
@@ -37,7 +37,7 @@
 
 ## Comprendre la notion d'association
 
-![cas_utilisation](/assets/img/association.png)
+![cas_utilisation](../../assets/img/association.png)
 
 ### Définition :
 
@@ -78,20 +78,20 @@ Dans Merise, la cardinalité est indiquée entre parenthèses
  à côté des entités associées.
 ```
 
-### Représentation UML :
+### Représentation UML :
 Indiquée par des nombres ou des plages aux extrémités de la ligne d'association.
 
 _1 :_ Une seule instance (relation 1:1).
 0.._ : Aucune ou plusieurs instances (relation 1:N ou N:N).
 1.._ : Au moins une instance.
 
-## Comprendre l'agrégation ( losange vide)
+## Comprendre l'agrégation ( losange vide)
 
-![cas_utilisation](/assets/img/agrégation_composite.png)
+![cas_utilisation](../../assets/img/agrégation_composite.png)
 
 **Agrégation composite** : Une relation forte où la vie du tout (composite) dépend de ses parties. Si le tout est détruit, les parties le sont aussi. Représentée par un losange plein dans un diagramme UML.
 
-![cas_utilisation](/assets/img/agrégation_partagée.png)
+![cas_utilisation](../../assets/img/agrégation_partagée.png)
 
 **Agrégation partagée** : Une relation faible où les parties peuvent exister indépendamment du tout. Représentée par un losange vide dans UML.
 
@@ -103,7 +103,7 @@ _1 :_ Une seule instance (relation 1:1).
 
 Une composition est une relation "tout-partie" forte où la partie dépend totalement du tout.
 
-### Représentation UML :
+### Représentation UML :
 Un losange plein à l'extrémité du "tout".
 
 ### Exemple :
@@ -150,9 +150,7 @@ Maison ◼─── Pièce
   - Côté `Maison` : `1` (chaque pièce appartient à une seule maison).
   - Côté `Pièce` : `0..*` (une maison peut avoir zéro ou plusieurs pièces).
 
----
 
----
 
 ---
 
@@ -162,9 +160,7 @@ Maison ◼─── Pièce
 
 ![border](../../assets/line/line-pink-point_l.png)
 
----
 
----
 
 ### Différences détaillées entre **Agrégation** et **Composition** dans UML
 
@@ -277,7 +273,7 @@ Une classe abstraite est une classe qui ne peut pas être instanciée directemen
 +------------------------+   +------------------------+
 ```
 
-## Représenter une interface
+## Représenter une interface
 
 Une interface définit un contrat que les classes implémentent. Elle ne contient que des méthodes abstraites (et éventuellement des constantes).
 
@@ -317,9 +313,9 @@ La flèche en pointillés indique que les classes concrètes s'engagent à fourn
 
 - [Heritage link](https://www.coursaline.com/format-texte/comprendre-les-classes-abstraites-en-UML/110)
 
-![alt text](/assets/img/abstract.png)
+![alt text](../../assets/img/abstract.png)
 
-![alt text](/assets/img/abstract_0.png)
+![alt text](../../assets/img/abstract_0.png)
 
 ![border](../../assets/line/line-teal-point_r.png)
 
