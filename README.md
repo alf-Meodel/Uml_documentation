@@ -15,7 +15,10 @@
 # Navigation
 
 - [Liste des dailys](./doc/liste_dailys.md)
-- [Plant UML](./doc/dailys/plant_uml.md)
+- [Cas d'utilisation](./doc/dailys/cas_utilisation_classes.md)
+- [Diagramme d'activité](./doc/dailys/diagramme_activité.md)
+- [Diagramme de sequence](./doc/dailys/diagramme_sequence.md)
+- [Diagramme_uml](./doc/dailys/diagramme_uml.md)
 
 ![border](./assets/line/line-teal-point_r.png)
 
